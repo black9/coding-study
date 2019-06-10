@@ -2,9 +2,36 @@
 <html>
 <head>
 <meta charset="EUC-KR">
-<title>Insert title here</title>
+<title>if함수를 사용한 버튼 테스트 입니다.</title>
 </head>
 <body>
 
+	<pre>
+    <h1>파라미터 타입 테스트</h1>
+    <hr>
+    <button onclick="testParaType(100);">숫자파라미터</button>
+    <button onclick="testParaType('test');">문자열파라미터</button>
+    <button onclick="testParaType({ });">객체파라미터</button>
+    <button onclick="testParaType(function(){ });">함수파라미터</button>
+    <button onclick="testParaType();">전달안함</button>
+    <button onclick="testParaType(true);">논리파라미터</button>
+    
+    <script>
+					function testParaType(p) {
+						if (typeof p == 'number')
+							alert('숫자를 전달했네요');
+						else if (typeof p == 'string')
+							alert('문자열을 전달했네요');
+						else if (typeof p == 'object')
+							alert('객체를 전달했네요');
+						else if (typeof p == 'function')
+							alert('함수를 전달했네요');
+						else if (typeof p == 'undefined')
+							alert('전달된 파라미터가 없네요');
+						else
+							alert('알 수 없네요');
+					}
+				</script>
+</pre>
 </body>
 </html>

@@ -5,58 +5,53 @@
 <title>Insert title here</title>
 </head>
 <body>
-<script type ="text/javascript">
-/*	var i;
-	var arr1 = [ 1, 3.1, "korea" ]; //배열 리터럴
-	document.write("arr1[0]=" + arr1[0] + "<br>");
-	document.write("arr1[1]=" + arr1[1] + "<br>");
-	document.write("arr1[2]=" + arr1[2] + "<br>");
-	var arr2 = new Array(); // Array()객체로 배열 생성
-	arr2[0] = "10"; //초기화
-	arr2[1] = "4";
-	arr2[2] = "apple";
-	document.write("<br>");
-	for (i = 0; i < arr2.length; i++) {
-		document.write("arr2[" + i + "]=" + arr2[i] + "<br>");
-	}*/
-	var degrees = new Array(); // 빈 배열 생성
-	degrees[0] = 15.1;
-	degrees[1] = 15.4;
-	degrees[2] = 16.1;
-	degrees[3] = 17.5;
-	degrees[4] = 19.2;
-	degrees[5] = 21.4;
-	
-	
+	<script type="text/javascript">
+		/*	var i;
+		 var arr1 = [ 1, 3.1, "korea" ]; //배열 리터럴
+		 document.write("arr1[0]=" + arr1[0] + "<br>");
+		 document.write("arr1[1]=" + arr1[1] + "<br>");
+		 document.write("arr1[2]=" + arr1[2] + "<br>");
+		 var arr2 = new Array(); // Array()객체로 배열 생성
+		 arr2[0] = "10"; //초기화
+		 arr2[1] = "4";
+		 arr2[2] = "apple";
+		 document.write("<br>");
+		 for (i = 0; i < arr2.length; i++) {
+		 document.write("arr2[" + i + "]=" + arr2[i] + "<br>");
+		 }*/
+		var degrees = new Array(); // 빈 배열 생성
+		degrees[0] = 15.1;
+		degrees[1] = 15.4;
+		degrees[2] = 16.1;
+		degrees[3] = 17.5;
+		degrees[4] = 19.2;
+		degrees[5] = 21.4;
 
-	var others = [10, 20, 30, 15.1, 15.4];
+		var others = [ 10, 20, 30, 15.1, 15.4 ];
 
-	var all_together = degrees.concat(others);
+		var all_together = degrees.concat(others);
 
-	var sum = 0;
-	for(i=0; i<degrees.length; i++)  
-		sum += degrees[i];
-		
-	document.write("평균 온도는 " + sum/degrees.length + "<br>");
-	document.write("all together <br>");
-	for(i in all_together)
-	{
-		document.write(all_together[i] + "<br>");
-	}
-	document.write("degrees <br>");
-	for(i in degrees)
-	{
-		document.write(degrees[i] + "<br>");
-	}
-	document.write("all together join <br>");
-	document.write(degrees.join("도 ") + "<br>");
+		var sum = 0;
+		for (i = 0; i < degrees.length; i++)
+			sum += degrees[i];
 
-	var sorted = all_together.sort();
-	document.write("all together join <br>");
-	for(i in sorted)
-	{
-		document.write(sorted[i] + "<br>");
-	}
+		document.write("평균 온도는 " + sum / degrees.length + "<br>");
+		document.write("all together <br>");
+		for (i in all_together) {
+			document.write(all_together[i] + "<br>");
+		}
+		document.write("degrees <br>");
+		for (i in degrees) {
+			document.write(degrees[i] + "<br>");
+		}
+		document.write("all together join <br>");
+		document.write(degrees.join("도 ") + "<br>");
+
+		var sorted = all_together.sort();
+		document.write("all together join <br>");
+		for (i in sorted) {
+			document.write(sorted[i] + "<br>");
+		}
 	</script>
 
 </body>

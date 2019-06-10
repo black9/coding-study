@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>prompt windows Test</title>
+<script>
+	var birth = prompt('Enter the SN : ');
+	document.writeln(birth + '<br>');
+	var token = birth.split("-");
+	for ( var i in token) {
+		document.writeln(token[i] + '<br>');
+	}
+	var yy = token[0].slice(0,2);
+	var mm = token[0].slice(2,4);
+	var dd = token[0].slice(4,6);
+	
+	var birthday = new Date();
+	birthday.setFullYear(
+			parseInt("19"+yy),
+			parseInt(mm - 1), parseInt(dd));
+	
+	document.writeln("birthday = " + birthday.toDateString());
+	
+</script>
+
+
+</head>
+<body>
+
+</body>
+</html>
