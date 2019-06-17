@@ -1,6 +1,6 @@
 package javastudy;
 
-public class javahelloworld {
+public class JavaHelloWorld {
 	public static int sum(int n, int m) {
 		return n + m;
 	}
