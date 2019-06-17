@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "rsa", "rsa\rsa.vcxproj", "{ED3B311A-724B-49DB-848A-1997A4E85342}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ED3B311A-724B-49DB-848A-1997A4E85342}.Debug|Win32.ActiveCfg = Debug|Win32
+		{ED3B311A-724B-49DB-848A-1997A4E85342}.Debug|Win32.Build.0 = Debug|Win32
+		{ED3B311A-724B-49DB-848A-1997A4E85342}.Release|Win32.ActiveCfg = Release|Win32
+		{ED3B311A-724B-49DB-848A-1997A4E85342}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
