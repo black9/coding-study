@@ -1,3 +1,5 @@
+#거북이로 그림 그리기
+
 import turtle
 import random
 
@@ -8,7 +10,7 @@ def screenLeftClick(x, y):
     turtle.goto(x,y)
 
 def screenRightClick(x, y):
-    turtle.pendown()
+    turtle.penup()
     turtle.goto(x,y)
 
 def screenMidClick(x, y):
