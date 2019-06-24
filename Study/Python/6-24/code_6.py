@@ -4,7 +4,7 @@ import turtle
 import random
 
 def screenLeftClick(x, y):
-    global r, g, b
+    global r, g, b	
     turtle.pencolor((r, g, b))
     turtle.pendown()
     turtle.goto(x,y)
@@ -21,7 +21,7 @@ def screenMidClick(x, y):
     g = random.random()
     b = random.random()
 
-pSize = 10
+pSize = 0
 r, g, b = 0.0, 0.0, 0.0
 
 turtle.title("거북이로 그림그리기")
