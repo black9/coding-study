@@ -20,3 +20,15 @@ if is_hex(string):
     print('16진수입니다. 10진수로 {0} 입니다.'.format(hex_to_dec(string)))
 else:
     print('16진수가 아닙니다.')
+
+'''
+##또 다른 예제
+
+num=input("16진수 한글자 입력: ")
+
+if('0'< num and num < '9') or ('a'<= num and num <= 'f') or ('A' <= num and num <='F'):
+    print("10진수 ==> ", int(num, 16))
+else:
+    print("16진수 아님")
+
+''
