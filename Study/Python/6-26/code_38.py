@@ -5,7 +5,6 @@ for i in range(2, 10) :
 
 print(l)
 
-
 for i in range(1, 10) :
      l = ""
      for k in range(2, 10) :
