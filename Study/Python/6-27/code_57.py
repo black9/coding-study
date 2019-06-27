@@ -1,0 +1,5 @@
+myT = (10, 20, 30)
+myL = list(myT)
+myL.append(40)
+myT = tuple(myL)
+print(myT)
