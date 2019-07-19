@@ -1,0 +1,36 @@
+["0x52616d61", "0x4e69636b", "0x4a6f7365"]
+
+
+geth --datadir khg init genesis.json 			- 설정 초기화
+
+geth --networkid 999 --datadir khg --rpc --rpcport 8545 --rpcaddr "192.168.64.1"  --rpccorsdomain "*" --rpcapi "admin, db, eth, debug, miner, net, shh, txpool, personal, web3" console
+
+geth attach http://192.168.64.1:8545
+
+geth --datadir test init genesis.json 
+
+geth --networkid 999 --datadir test --rpc --rpcport 8545 --rpccorsdomain "*" --rpcapi "admin, db, eth, debug, miner, net, shh, txpool, personal, web3" console
+
+
+geth attach http://localhost:8545
+
+"Ethereum Wallet.exe" --rpc //./pipe/geth.ipc
+
+		
+miner.start() 						- 마이닝 시작
+miner.stop()  						- 마이닝 정지
+eth.getTransaction 					- 트랜잭션 확인
+eth.getTransactionReceipt				- 트랜잭션 영수증
+
+
+personal.newAccount("eth")				- 계좌 생성 명령어
+eth.accounts						- 계정 확인
+
+personal.newAccount("eth1") 				- 계좌 생성 명령어
+
+miner.setEtherbase(eth.accounts[1]) 			- 마이닝 주체 변경
+
+eth.getBalance(eth.accounts[0]) 			- 계정 이더리움 확인
+
+personal.unlockAccount(eth.accounts[0], "eth", 숫자) 	- 계정의 권한 해제, 숫자의 시간을 의미함
+
