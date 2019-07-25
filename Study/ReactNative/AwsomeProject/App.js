@@ -6,6 +6,7 @@ import GreetingGroup from './src/components/GreetingGroup';
 import BlinkApp from './src/components/BlinkApp';
 import StyleApp from './src/components/StyleApp';
 import Problem1 from './src/components/Problem1';
+import FlexDimensionBasics from './src/components/FlexDimensionBasics'
 
 export default function App() {
   return (
@@ -16,9 +17,9 @@ export default function App() {
         <Banana></Banana>
         <GreetingGroup></GreetingGroup>
         <BlinkApp></BlinkApp>
-        <StyleApp></StyleApp> */}
-       <Problem1></Problem1>
-
+        <StyleApp></StyleApp> 
+        <Problem1></Problem1> */}
+        <FlexDimensionBasics></FlexDimensionBasics>
     </View>
   );
 }
