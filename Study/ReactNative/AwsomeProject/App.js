@@ -6,7 +6,9 @@ import GreetingGroup from './src/components/GreetingGroup';
 import BlinkApp from './src/components/BlinkApp';
 import StyleApp from './src/components/StyleApp';
 import Problem1 from './src/components/Problem1';
-import FlexDimensionBasics from './src/components/FlexDimensionBasics'
+import FlexDimensionBasics from './src/components/FlexDimensionBasics';
+import Em  from './src/components/Em';
+
 
 export default function App() {
   return (
@@ -18,8 +20,10 @@ export default function App() {
         <GreetingGroup></GreetingGroup>
         <BlinkApp></BlinkApp>
         <StyleApp></StyleApp> 
-        <Problem1></Problem1> */}
-        <FlexDimensionBasics></FlexDimensionBasics>
+        <Problem1></Problem1> 
+        <FlexDimensionBasics></FlexDimensionBasics> */}
+        <Em>안녕하세요.</Em>
+
     </View>
   );
 }
