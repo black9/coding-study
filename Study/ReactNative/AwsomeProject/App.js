@@ -4,6 +4,8 @@ import { StyleSheet, Text, View } from 'react-native';
 import Banana from './src/components/Banana';
 import GreetingGroup from './src/components/GreetingGroup';
 import BlinkApp from './src/components/BlinkApp';
+import StyleApp from './src/components/StyleApp';
+
 
 export default function App() {
   return (
@@ -14,6 +16,8 @@ export default function App() {
         <Banana></Banana>
         <GreetingGroup></GreetingGroup>
         <BlinkApp></BlinkApp>
+       <StyleApp></StyleApp>
+       
     </View>
   );
 }
