@@ -13,6 +13,9 @@ import BaseTextInput from './src/components/BaseTextInput';
 import ButtonGroup from './src/components/ButtonGroup';
 import SectionListBasics from './src/components/SectionListBasics';
 import FlatListBasics from './src/components/FlatListBasics';
+import LoginScreen from './src/screen/LoginScreen';
+import FooterTab from './src/screen/FooterTab';
+
 
 export default function App() {
   return (
@@ -32,19 +35,22 @@ export default function App() {
         <BaseTextInput></BaseTextInput>
         <ButtonGroup></ButtonGroup>
 
-        <SectionListBasics></SectionListBasics>*/}
+        <SectionListBasics></SectionListBasics>
 
-        <FlatListBasics></FlatListBasics>
+        <FlatListBasics></FlatListBasics> 
 
+        <FooterTab></FooterTab>*/}
+
+        <LoginScreen></LoginScreen>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+ //   flex: 1,
     backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+ //   alignItems: 'center',
+ //   justifyContent: 'center',
   },
 });
