@@ -1,0 +1,22 @@
+import React from "react";
+import { StyleSheet, Text, View, TouchableHighlight } from "react-native";
+
+export default class SettingScreen extends React.Component {
+    render() {
+        return (
+            <View style={styles.container}>
+                <Text style={{ color: "orange", fontSize: 30 }}> 설정 화면 입니다 </Text>
+            </View>
+        )
+    }
+}
+
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        backgroundColor: '#fff',
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
+
+})
