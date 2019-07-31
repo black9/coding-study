@@ -1,11 +1,22 @@
 import React from "react";
-import { StyleSheet, Text, View, TouchableHighlight } from "react-native";
+import { StyleSheet, Text, View, TouchableHighlight, } from "react-native";
 
-export default class SettingScreen extends React.Component {
+export default class Settings extends React.Component {
+
+    static navigationOptions = ({ navigation }) => {
+        const params = navigation.state.params || {};
+        return {
+            title: '환경설정',
+            tabBarIcon: (
+                <Ionicons name="md-settings" size={20} color="#ff6666" />
+            ),
+        };
+    };
+
     render() {
         return (
-            <View style={styles.container}>
-                <Text style={{ color: "orange", fontSize: 30 }}> 설정 화면 입니다 </Text>
+            <View style={style.container}>
+                <Text style={{ color='tomato', fontSize: 40 }}>Setting을 위한 스크린</Text>
             </View>
         )
     }
