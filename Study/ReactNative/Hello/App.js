@@ -1,23 +1,24 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import HomeScreen from './src/components/HomeScreen';
-import DetailScreen from './src/components/DetailScreen';
 import { createStackNavigator, RouteConfigs, BottomTabNavigatorConfig, createAppContainer, createBottomTabNavigator, createMaterialTopTabNavigator } from 'react-navigation';
-import SettingScreen from './src/components/SettingScreen';
+import SettingScreen2 from './src/day801/SettingScreen2';
 import Ionicons from 'react-native-vector-icons/Ionicons';
+import HomeScreen2 from './src/day801/HomeScreen2';
+import DetailScreen2 from './src/day801/DetailScreen2';
+
 
 
 
 const StackNavigator = createStackNavigator({
   Home: {
-    screen: HomeScreen
+    screen: HomeScreen2
   },
   Detail: {
-    screen: DetailScreen
+    screen: DetailScreen2
   },
-  // Setting : {
-  //   screen : SettingScreen
-  // }
+  Setting: {
+    screen: SettingScreen2
+  }
 });
 
 const defaultNavigationOptions = {
@@ -43,7 +44,7 @@ const TabNavigator = createBottomTabNavigator({
     }
   },
   Setting: {
-    screen: SettingScreen
+    screen: SettingScreen2
   }
 },
   {
