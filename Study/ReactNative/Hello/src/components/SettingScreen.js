@@ -1,8 +1,8 @@
-import React from "react";
-import { StyleSheet, Text, View, TouchableHighlight, } from "react-native";
+import React, { Component } from 'react';
+import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
+import Ionicons from 'react-native-vector-icons/Ionicons';
 
-export default class Settings extends React.Component {
-
+export default class SettingScreen extends Component {
     static navigationOptions = ({ navigation }) => {
         const params = navigation.state.params || {};
         return {
@@ -10,13 +10,15 @@ export default class Settings extends React.Component {
             tabBarIcon: (
                 <Ionicons name="md-settings" size={20} color="#ff6666" />
             ),
-        };
-    };
-
+        }
+    }
     render() {
         return (
-            <View style={style.container}>
-                <Text style={{ color='tomato', fontSize: 40 }}>Setting을 위한 스크린</Text>
+            <View style={styles.container}>
+                <TouchableOpacity>
+                    <Text style={styles.text}> Setting을 위한 스크린  </Text>
+                </TouchableOpacity>
+
             </View>
         )
     }
@@ -25,9 +27,12 @@ export default class Settings extends React.Component {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#fff',
-        alignItems: 'center',
-        justifyContent: 'center',
+        justifyContent: "center",
+        alignItems: "center"
     },
 
+    text: {
+        color: 'orange',
+        fontSize: 15
+    }
 })
