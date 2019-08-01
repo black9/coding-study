@@ -2,14 +2,19 @@ import React, { Component } from 'react'
 import { StyleSheet, TouchableHighlight, Text, View, Styles } from 'react-native'
 
 
-
 export default class DetailScreen2 extends Component {
+  constructor(props) {
+    super(props)
+    const item = this.props.navigation.getParam('item')
+    console.log(item)
+  }
+
   render() {
     return (
       <View>
         <Text style={{ fontSize: 30, fontWeight: 'bold' }}> 상세페이지! </Text>
-        <Text style={styles.title}> 제목 </Text>
-        <Text style={styles.content}> 글 </Text>
+        <Text style={styles.title}> {this.props.navigation.getParam('item').title} </Text>
+        <Text style={styles.content}> {this.props.navigation.getParam('item').content} </Text>
       </View>
     )
   }

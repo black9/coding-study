@@ -5,7 +5,7 @@ export default class BoardList extends React.Component {
 
     renderBoard({ item }) {
         return (
-            <TouchableOpacity style={{ flex: 1, width: "100%", flexDirection: 'row', borderWidth: 1 }} onPress={()=>this.props.navigation.push('Detail')}>
+            <TouchableOpacity style={{ flex: 1, width: "100%", flexDirection: 'row', borderWidth: 1 }} onPress={() => this.props.navigation.push('Detail', { item: item })}>
                 <Text style={{ fontSize: 24, flex: 2 }}> {item.key}</Text>
                 <Text style={{ fontSize: 24, flex: 10 }}> {item.title}</Text>
             </TouchableOpacity>
