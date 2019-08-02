@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Text, TouchableOpacity, View, styles } from 'react-native';
+import { Text, TouchableOpacity, View, Style } from 'react-native';
 import { KeyboardAvoidingView } from 'react-native';
 
 

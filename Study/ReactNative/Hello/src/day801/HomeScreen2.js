@@ -17,21 +17,52 @@ let board = [
 ];
 
 export default class HomeScreen extends Component {
+
     constructor(props) {
         super(props)
         this.state = {
             board: board
         }
     }
+
+    createBoard(boardItem) {
+        // key: '2',
+        // title: "제목2",
+        // content: '내용2'
+        const itemKey = (this.state.board.length + 1).toString()
+        const item = {
+            key: itemKey,
+            title: boardItem.title,
+            content: boardItem.content
+        }
+        const board = this.state.board.concat(item);
+        //console.log(this.state.board)
+        this.setState({ board: board })
+        return
+    }
+
+    deleteBoard(itemKey) {
+        const board = this.state.board.filter(
+            (item) => {
+                if (item.key != itemKey) {
+                    return item
+                }
+            }
+        )
+        this.setState({ board: board })
+    }
+
     render() {
         return (
             <View style={styles.container}>
                 <Text style={{ color: 'red', fontSize: 40 }}>홈 스크린!</Text>
                 <MyButton
-                    //navigation={this.props.navigation}
-                    onPress={() => this.props.navigation.push('Create')}
-                    title="글 작성" />
-                <BoardList board={this.state.board} navigation={this.props.navigation} />
+                    title="글 작성" onPress={() => this.props.navigation.push('Create', { 'createFunc': this.createBoard.bind(this) })}
+                //navigation={this.props.navigation}
+                />
+
+                <BoardList board={this.state.board} navigation={this.props.navigation} deleteFuc={this.deleteBoard.bind(this)} />
+
             </View>
         )
     }
