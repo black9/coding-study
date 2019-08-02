@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
-import { Text, TouchableOpacity, View } from 'react-native';
+import { Text, TouchableOpacity, View, styles } from 'react-native';
+import { KeyboardAvoidingView } from 'react-native';
+
+
 
 export default class MyButton extends Component {
     render() {
@@ -12,6 +15,8 @@ export default class MyButton extends Component {
                     <Text style={{ backgroundColor: 'tomato', fontSize: 22, padding: 10, color: 'white', fontWeight: "bold" }}> {this.props.title} </Text>
                 </TouchableOpacity>
             </View>
+
+
         )
     }
 }
